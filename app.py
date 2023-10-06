@@ -6,7 +6,7 @@ import streamlit as st
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-st.title("Top 5% Hi Heath!" " income share")
+st.title("Top 5%" " income share")
 st.markdown("Share of income received by the richest 5%" " of the population.")
 DATA = os.path.join(HERE, "data.csv")
 
@@ -23,7 +23,7 @@ data_load_state.text("")
 countries = st.multiselect(
     "Countries",
     list(sorted({d for d in data["Entity"]})),
-    default=["Australia", "China", "Germany", "Japan", "United States"],
+    default=["Australia", "China", "Germany", "Japan", "United States", "Canada"],
 )
 earliest_year = data["Year"].min()
 latest_year = data["Year"].max()
