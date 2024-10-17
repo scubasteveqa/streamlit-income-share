@@ -1,4 +1,4 @@
 altair
 pandas
-streamlit
+streamlit==1.37.1
 #streamlit
